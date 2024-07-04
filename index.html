@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On The Way</title>
+    <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/header.css">
+     <link rel="stylesheet" href="./css/index.css">
+     <link rel="stylesheet" href="./css/footer.css">
+
+     <!-- JS -->
+     <script src="./js/script.js" defer></script>
+     <script src="./js/category-filter.js" defer></script>
+     <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./imgs/logo.jpg" alt="on the way logo"></a>
+            <!-- <h1 class="title">On The Way</h1> -->
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-list"><a href="./index.html" class="nav-link curr">Home</a></li>
+                <li class="nav-list"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-list"><a href="#" class="nav-link">Menu</a></li>
+                <li class="nav-list"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-list"><a href="https://www.foodpanda.ph/restaurant/dtoy/on-the-way-monumento" class="nav-link btn" target="_blank">Order now <i class="ri-send-plane-fill"></i></a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+     <section class="hero-section">
+        <!-- SLIDER 1 -->
+        <div class="hero-slider main-slider">
+            <img src="./imgs/hero-img.jpg" alt="on the way hero">
+        </div>
+
+        <!-- SLIDER 2 -->
+        <div class="hero-slider main-slider">
+            <img src="./imgs/hero-img2.jpg" alt="on the way hero">
+        </div>
+
+        <!-- DOTS -->
+        <div class="dotsbox">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+         </div>
+     </section>
+
+    <!-- ===== SERVICE SECTION ===== -->
+     <section class="service-section">
+        <div class="div">
+            <!-- <i class="ri-truck-line"></i> -->
+            <lord-icon
+                src="https://cdn.lordicon.com/mfmkufkr.json"
+                trigger="hover"
+                colors="primary:#0a2e5c"
+                style="width:50px;height:50px">
+            </lord-icon>
+            <p>Delivery</p>
+        </div>
+        <div class="div">
+            <!-- <i class="ri-book-marked-line"></i> -->
+            <lord-icon
+                src="https://cdn.lordicon.com/omiqopzf.json"
+                trigger="hover"
+                colors="primary:#0a2e5c"
+                style="width:50px;height:50px">
+            </lord-icon>
+            <p>Online booking</p>
+        </div>
+        <div class="div">
+            <!-- <i class="ri-store-2-line"></i> -->
+            <lord-icon
+                src="https://cdn.lordicon.com/wmwqvixz.json"
+                trigger="hover"
+                colors="primary:#0a2e5c"
+                style="width:50px;height:50px">
+            </lord-icon>
+            <p>In-store pickup</p>
+        </div>
+     </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+     <section class="about-section">
+        <div class="div1">
+            <h2>About On The Way</h2>
+            <p>On The Way is the newest Chicken House & Cafe that lets you experience flavors from around the world.</p>
+            <a href="#">READ MORE <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <div class="div2">
+            <img src="./imgs/ontheway.png" alt="on the way store">
+        </div>
+     </section>
+
+     <!-- ===== ADS ===== -->
+     <section class="section">
+        <img src="./imgs/ig-food.jpg" alt="on the way ig food">
+        <a href="https://www.foodpanda.ph/restaurant/dtoy/on-the-way-monumento" target="_blank">Order now</a>
+     </section>
+
+     <!-- ===== LOCATION SECTION ===== -->
+     <section class="location-section">
+        <h2>Branches Location</h2>
+
+        <div class="choose-category">
+            <div class="filter">
+                <!-- <button class="btn active" onclick="filterSelection('all')">Show all</button> -->
+                <button class="btn" onclick="filterSelection('monumento')">Monumento</button>
+                <button class="btn" onclick="filterSelection('malate')">Malate</button>
+                <button class="btn" onclick="filterSelection('meycauayan')">Meycauayan</button>
+            </div>
+        </div>
+
+        <div class="branches content monumento">
+            <h3>Monumento</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15439.989172749885!2d120.98488400000001!3d14.656095000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5b2aea770c5%3A0xbef8a85396b97f68!2sOn%20The%20Way%20Monumento%20Branch!5e0!3m2!1sen!2sph!4v1720051510958!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="branches content malate">
+            <h3>Malate</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61786.05391388891!2d120.99584500000002!3d14.563232000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f5a766cfa3%3A0x6ab3f4e74ac1f551!2sOn%20The%20Way%20Malate%20Branch!5e0!3m2!1sen!2sph!4v1720051531985!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="branches content meycauayan">
+            <h3>Meycauayan</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61728.733040332394!2d120.99879999999999!3d14.766448999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b11b84374bb5%3A0xd466a5baa6b98717!2sOn%20The%20Way%20Meycauayan%20Branch!5e0!3m2!1sen!2sph!4v1720051554883!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+     </section>
+
+     <!-- ===== CALL ===== -->
+     <section class="section call">
+        <p>Order a food near you.</p>
+        <h2>Get a fast response, call us now.</h2>
+
+        <div class="btns">
+            <a href="mailto: onthewayincorporated@gmail.com"><i class="ri-mail-line"></i> Request via email</a>
+            <a href="tel:9664054818" class="btn2"><i class="ri-phone-line"></i> 0966 405 4818</a>
+        </div>
+     </section>
+
+     <!-- ===== CONTACT FORM ===== -->
+     <section class="contact-form">
+        <div class="div1">
+            <div class="div">
+                <p class="mini-p">Contact us</p>
+                <h2>Get a fast response, contact us now</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, reiciendis.</p>
+            </div>
+
+            <div class="div-c">
+                <div>
+                    <i class="ri-mail-send-fill"></i>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>onthewayincorporated@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="div-c">
+                <div>
+                    <i class="ri-phone-line"></i>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>0966 405 4818</p>
+                </div>
+            </div>
+            
+            <div class="div-c">
+                <div>
+                    <i class="ri-time-line"></i>
+                </div>
+                <div>
+                    <h3>Open Hours</h3>
+                    <p><strong>Mon - Sun:</strong> 10:00AM - 10:00PM</p>
+                </div>
+            </div>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/OnTheWay.inc" target="_blank"><i class="ri-facebook-fill"></i></a>
+                <a href="https://www.instagram.com/ontheway.ph/?hl=en" target="_blank"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                <a href="#"><i class="ri-tiktok-fill"></i></a>
+            </div>
+        </div>
+
+        <div class="div2">
+            <form action="">
+                <div class="div">
+                    <div>
+                        <label for="name">FULL NAME</label>
+                        <input type="text" name="name" id="name" autocomplete="off" required>                    
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" name="phone" id="phone" maxlength="11" autocomplete="off" required>                    
+                    </div>
+                </div>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" autocomplete="off" required>
+                <label for="msg">WRITE YOUR MESSAGE</label>
+                <textarea name="msg" id="msg" required></textarea><br>
+                <button>SEND MESSAGE</button>
+            </form>
+        </div>
+     </section>
+
+     <!-- ===== FOOTER ===== -->
+     <footer class="footer">
+        <div class="flex">
+            <div class="div">
+                <!-- <a href="./index.html"><img src="./imgs/logo.jpg" alt="on the way logo"></a> -->
+                <h3>About us</h3>
+                <p>On The Way is the newest Chicken House & Cafe that lets you experience flavors from around the world.</p>
+            </div>
+
+            <div class="div">
+                <h3>Quick Links</h3>
+                <div class="links">
+                    <a href="./index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            
+            <div class="div">
+                <h3>Branches</h3>
+                <div class="links">
+                    <a href="https://www.google.com/maps/place/On+The+Way+Monumento+Branch/@14.656095,120.984884,14z/data=!4m6!3m5!1s0x3397b5b2aea770c5:0xbef8a85396b97f68!8m2!3d14.6560947!4d120.9848838!16s%2Fg%2F11tf83vl2y?hl=en&entry=ttu" target="_blank">Monumento</a>
+                    <a href="https://www.google.com/maps?ll=14.563232,120.995845&z=12&t=m&hl=en&gl=PH&mapclient=embed&cid=7688758263080416593" target="_blank">Malate</a>
+                    <a href="https://www.google.com/maps/place/On+The+Way+Meycauayan+Branch/@14.766449,120.9988,12z/data=!4m6!3m5!1s0x3397b11b84374bb5:0xd466a5baa6b98717!8m2!3d14.766449!4d120.9988003!16s%2Fg%2F11y4q7d0d6?hl=en&entry=ttu" target="_blank">Meycauayan</a>
+                </div>
+            </div>
+
+            <div class="div">
+                <h3>Socials</h3>
+                <div class="socials">
+                    <a href="https://www.facebook.com/OnTheWay.inc" target="_blank"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/ontheway.ph/?hl=en" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#"><i class="ri-tiktok-fill"></i></a>
+                </div>
+            </div>
+        </div>
+     </footer>
+     <div class="copyright">
+        <p>&copy 2024 Business Website. Created by Zypherr with <span>♥</span>. All rights reserved.</p>
+    </div>
+</body>
+</html>
