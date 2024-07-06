@@ -9,7 +9,7 @@
 .contact-form .div{
     max-width: 600px;
     margin: 0 auto;
-    padding: 3.5rem 3rem;
+    padding: 3.5rem 3rem 5rem;
     background: var(--color2);
     box-shadow: 0 0 5px var(--color2);
     border-radius: 5px;
@@ -17,6 +17,9 @@
 .contact-form .div h3{
     font-size: 3rem;
     color: var(--color1);
+}
+.contact-form .div1{
+    padding: 3rem 3rem .5rem;
 }
 
 .contact-form input, .contact-form textarea{
