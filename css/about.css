@@ -1,0 +1,75 @@
+@import url(./style.css);
+
+.section{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.section img{
+    max-width: 70rem;
+    max-height: 70rem;
+}
+
+/* OUR STORY */
+.our-story{
+    padding: 4rem 2rem;
+}
+.our-story p{
+    margin-bottom: 1.5rem;
+}
+.our-story img{
+    min-height: 20rem;
+}
+
+/* MISSION - VISION */
+.mission-vision{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 4rem 2rem;
+}
+
+.mission-vision .div{
+    background: var(--color3);
+    flex: 1;
+    border-radius: 5px;
+    padding: 4rem 2rem;
+}
+
+/* TEAM */
+.our-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+.our-team .team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+.our-team img{
+    max-width: 30rem;
+    height: 30rem;
+}
+
+/* ABOUT RESPONSIVE MEDIA */
+@media (max-width: 990px) {
+    .our-team .team{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .our-team .team{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .mission-vision{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,90 @@
+@import url(./style.css);
+
+
+/* MENU */
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 0;
+}
+
+.menu img{
+    width: 80%;
+}
+
+/* FOOD PANDA DELIVERY */
+.food-panda{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+.food-panda img{
+    width: 50%;
+    height: 50rem;
+    max-height: 100%;
+    flex: 1;
+}
+
+/* ORDER */
+.order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.order .branches{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.order h3{
+    font-family: var(--font3);
+    font-size: 3rem;
+}
+.order .branches img{
+    margin-bottom: 2.5rem;
+}
+.order .branches a{
+    color: var(--color1);
+    background: var(--color4);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 1rem 1.5rem;
+    transition: .3s ease-in-out;
+}
+.order .branches a:hover{
+    color: var(--color4);
+    background: var(--color1);
+    border-color: var(--color4);
+}
+
+/* MENU RESPONSIVE MEDIA */
+@media (max-width: 800px) {
+    .food-panda{
+        flex-direction: column;
+    }
+    .food-panda img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .order .branches{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu img{
+        width: 90%;
+    }
+    
+}

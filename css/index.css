@@ -246,7 +246,6 @@
 .section img{
     display: block;
     width: 50%;
-    border-radius: 5px;
     margin-bottom: 1.5rem;
 }
 .section a{
