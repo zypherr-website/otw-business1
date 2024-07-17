@@ -8,39 +8,43 @@
 
 .contact-form .div{
     max-width: 600px;
+    background: var(--color2);
+    box-shadow: 0 0 3px var(--color2);
+    border-radius: 5px;
     margin: 0 auto;
     padding: 3.5rem 3rem 5rem;
-    background: var(--color2);
-    box-shadow: 0 0 5px var(--color2);
-    border-radius: 5px;
 }
 .contact-form .div h3{
     font-size: 3rem;
     color: var(--color1);
 }
 .contact-form .div1{
-    padding: 3rem 3rem .5rem;
+    padding: 3rem;
+}
+.contact-form .div2{
+    background: #fff;
 }
 
 .contact-form input, .contact-form textarea{
     width: 400px;
     height: 40px;
-    padding: 1rem;
-    margin-bottom: 2.5rem;
-    color: var(--color1);
+    font-family: var(--font1);
+    color: var(--color2);
     background: transparent;
-    border: 1.8px solid var(--color2);
+    border: 1.8px solid var(--color1);
     border-radius: 2.5px;
-    box-shadow: 0 0 5px var(--color1);
+    box-shadow: 0 0 25px var(--color1);
     resize: none;
     outline: none;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
     transition: .5s ease-in-out;
 }
 .contact-form textarea{
     height: 150px;
 }
 .contact-form input:focus, .contact-form textarea:focus{
-    border-color: var(--other1);
+    border-color: var(--color5);
 }
 .contact-form button{
     max-width: 100%;
@@ -48,7 +52,7 @@
     font-family: var(--font2);
     font-size: 1.5rem;
     color: var(--color1);
-    background: transparent;
+    background: #123;
     border-radius: 5px;
     border: 2.5px solid transparent;
     box-shadow: 0 0 5px var(--color1);
@@ -58,9 +62,9 @@
 }
 .contact-form button:hover{
     color: var(--color1);
-    background: #123;
+    background: var(--color4);
     border-color: var(--color5);
-    box-shadow: 0 0 10px var(--color1);
+    box-shadow: 0 0 5px var(--color5);
 }
 
 /* MEDIA */
